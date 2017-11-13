@@ -7,19 +7,19 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <div id="third">
+        <h1>Dodaj prostor</h1>
         <form action="dodajProstor2.php" method="post">
-        <input type="text" name="stanje">
-        <input type="number" name="velikost">
-        <input type="text" name="lokacija">
-        <input type="number" name="najemnina">
-        <input type="text" name="opis">
-        <input type="submit" value="Poslji">
+        <div class="text"> Stanje: </div><div class="box"><input type="text" name="stanje"></div>
+        <div class="text"> Velikost: </div><div class="box"><input type="number" name="velikost"></div>
+        <div class="text"> Lokacija: </div><div class="box"><input type="text" name="lokacija"></div>
+        <div class="text"> Najemnina: </div><div class="box"><input type="number" name="najemnina"></div>
+        <div class="text"> Opis: </div><div class="box"><input type="text" name="opis"></div>
+        <div id="submit"><input type="submit" value="Poslji"></div>
         </form>
-        <?php
-        // put your code here
-        ?>
+        </div>
     </body>
 </html>
